@@ -1,0 +1,19 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd ../ && faas-cli build -f ./blue-line.yml",
+    "deploy": "cd ../ && faas-cli deploy -f ./blue-line.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opencltbrigade/lynx-blue-line-schedule-sdk": "^0.1.2",
+    "lynx-schedule-json": "git+https://github.com/OpenCLTBrigade/blue-line-schedule-json.git"
+  },
+  "devDependencies": {}
+}
