@@ -1,0 +1,27 @@
+{
+  "name": "blue-line-schedule-next-trains-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "invoke:nextTrains": "sls invoke local --function nextTrains",
+    "invoke:listStations": "sls invoke local --function listStations"
+  },
+  "dependencies": {
+    "@opencltbrigade/lynx-blue-line-schedule-sdk": "^0.1.0",
+    "lynx-schedule-json": "https://github.com/OpenCLTBrigade/blue-line-schedule-json",
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/node": "^10.12.18",
+    "serverless-plugin-typescript": "^1.1.9",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.6.3",
+    "webpack": "^4.29.0"
+  },
+  "author": "Open Charlotte Brigade",
+  "license": "MIT"
+}
