@@ -1665,22 +1665,6 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-"lynx-blue-line-schedule-sdk@https://github.com/OpenCLTBrigade/blue-line-schedule-sdk-js":
-  version "1.0.0"
-  resolved "https://github.com/OpenCLTBrigade/blue-line-schedule-sdk-js#776fcb83eabc3a85194ff4e23168a99e575de86c"
-  dependencies:
-    lynx-schedule-json "https://github.com/OpenCLTBrigade/blue-line-schedule-json"
-
-"lynx-schedule-json@git+https://github.com/OpenCLTBrigade/blue-line-schedule-json.git":
-  version "1.0.0"
-  uid c16d04bdecc52e0dd011e2a110e39ca8355821a6
-  resolved "git+https://github.com/OpenCLTBrigade/blue-line-schedule-json.git#c16d04bdecc52e0dd011e2a110e39ca8355821a6"
-  dependencies:
-    "@types/ramda" "^0.26.22"
-    node-fetch "^2.6.0"
-    ramda "^0.26.1"
-    typescript "^3.6.3"
-
 "lynx-schedule-json@https://github.com/OpenCLTBrigade/blue-line-schedule-json":
   version "1.0.0"
   resolved "https://github.com/OpenCLTBrigade/blue-line-schedule-json#c16d04bdecc52e0dd011e2a110e39ca8355821a6"
@@ -1901,9 +1885,11 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
 node-fetch@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-libs-browser@^2.2.1:
   version "2.2.1"
@@ -2764,6 +2750,11 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
+
 ts-loader@^5.3.3:
   version "5.4.5"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.4.5.tgz#a0c1f034b017a9344cef0961bfd97cc192492b8b"
@@ -2931,6 +2922,11 @@ watchpack@^1.6.0:
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
 
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
+
 webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"
@@ -2967,6 +2963,14 @@ webpack@^4.29.0:
     terser-webpack-plugin "^1.4.1"
     watchpack "^1.6.0"
     webpack-sources "^1.4.1"
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 wide-align@^1.1.0:
   version "1.1.3"
